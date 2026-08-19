@@ -16,7 +16,6 @@
           <defs>
             <filter id="ink"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" seed="17" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.15" xChannelSelector="R" yChannelSelector="G"/></filter>
             <filter id="paper"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="4" seed="4" result="grain"/><feColorMatrix in="grain" type="saturate" values="0" result="mono"/><feComponentTransfer in="mono" result="soft"><feFuncA type="table" tableValues="0 .13"/></feComponentTransfer><feBlend in="SourceGraphic" in2="soft" mode="multiply"/></filter>
-            <pattern id="doodles" width="190" height="195" patternUnits="userSpaceOnUse"><g fill="none" stroke="#b9b1a0" stroke-width="2.2" opacity=".4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 28c0-9 7-15 15-15 6 0 9 4 10 8 10-2 15 5 13 12-2 5-7 6-12 5H25c-5 0-8-3-8-10z"/><path d="M78 18v26m-12-14h24m-18 14 6-26m6 26-6-26"/><path d="M132 15v28m-10-9 10-19 10 19m-16-2h12"/><path d="M164 22c5-10 16-7 16 1 0 8-16 17-16 17s-16-9-16-17c0-8 11-11 16-1z"/><rect x="26" y="69" width="52" height="26" rx="4"/><path d="M31 95v9m40-9v9m-30-22h10m5 0h10M22 75h-8v12h12"/><circle cx="43" cy="104" r="5"/><circle cx="66" cy="104" r="5"/><path d="M113 94c0-18 9-28 18-28s18 10 18 28m-42 0h48M116 94l-7 9m35-9 7 9M131 66v-9m-9 9 9-9 9 9"/><path d="M169 68c11 0 17 12 10 21-5 7-17 10-28 14 4-11 7-23 14-30 1-3 2-5 4-5z"/><path d="M20 143l12-16 12 16m-19 0v16m14-16v16m-30 0h44"/><path d="M70 145c4-16 23-16 26 0l-3 17H73zM77 128c0-7 12-7 12 0"/><path d="M128 126c-7 0-13 6-13 13v21h29v-21c0-7-6-13-13-13h-3zM130 126v-9m-12 17h23m-18 26v-15m12 15v-15"/><path d="M167 131c4-7 17-7 21 0 4 8-3 13-11 20-8-7-15-12-10-20zM158 162h32m-25 0c-2 10-2 16 0 23m15-23c2 10 2 16 0 23"/></g></pattern>
             <pattern id="taiwanDoodles" width="380" height="390" patternUnits="userSpaceOnUse">
               <g fill="none" stroke="#b8ad98" stroke-width="2" opacity=".36" stroke-linecap="round" stroke-linejoin="round">
                 <g transform="translate(20 22)"><path d="M4 26h105l13 11v30H4zM18 26V9h72l19 17M17 67v9m76-9v9M26 17h18m8 0h18"/><circle cx="27" cy="70" r="7"/><circle cx="91" cy="70" r="7"/><path d="M13 40h17v14H13zm25 0h17v14H38zm25 0h17v14H63zm25 0h17v14H88z"/></g>
@@ -37,7 +36,7 @@
             </pattern>
             <pattern id="fibers" width="92" height="74" patternUnits="userSpaceOnUse"><rect width="92" height="74" fill="#f1eadb"/><g stroke-linecap="round"><path d="M7 13l18-5m11 18 25-8M3 49l30-6m16 20 35-9M68 5l16 3M16 69l18-4" stroke="#c8b99e" stroke-width="1.2" opacity=".45"/><path d="M10 28l7 2m27 10 12-3m19 24 9 2M65 31l18-5" stroke="#9f7650" stroke-width=".8" opacity=".33"/><circle cx="31" cy="15" r=".9" fill="#7e5d3e" opacity=".35"/><circle cx="72" cy="44" r="1" fill="#6f4c31" opacity=".28"/></g></pattern>
           </defs>
-          <rect id="paperBase" width="760" height="1320" fill="#faf6e9"/><image id="doodleLayer" href="./taiwan-doodles.png" x="0" y="0" width="760" height="1320" preserveAspectRatio="xMidYMid slice"/><rect id="fiberLayer" width="760" height="1320" fill="url(#fibers)" opacity="0"/><rect width="760" height="1320" fill="#faf6e9" opacity=".08" filter="url(#paper)"/>
+          <rect id="paperBase" width="760" height="1320" fill="#faf6e9"/><rect id="doodleLayer" width="760" height="1320" fill="url(#taiwanDoodles)"/><rect id="fiberLayer" width="760" height="1320" fill="url(#fibers)" opacity="0"/><rect width="760" height="1320" fill="#faf6e9" opacity=".08" filter="url(#paper)"/>
           <g class="ink" filter="url(#ink)"><rect x="15" y="15" width="730" height="1290" fill="none" stroke="#11100f" stroke-width="5"/><path d="M62 79h165M533 79h165" stroke="#11100f" stroke-width="25"/><text x="380" y="96" text-anchor="middle" class="title">我的島嶼車票</text><text id="dateText" x="62" y="194" class="date">2026.01.05</text><text x="62" y="283" class="love">愛心</text><text x="649" y="190" text-anchor="middle" class="zone">區間</text><text x="649" y="238" text-anchor="middle" class="local">LOCAL</text><text id="fromText" x="164" y="379" class="station">永康</text><text id="fromRomanText" x="164" y="426" class="roman">Yongkang</text><path d="M167 464 L210 464 L188.5 508 Z"/><text x="250" y="495" class="direction">順行</text><text id="toText" x="164" y="607" class="station">保安</text><text id="toRomanText" x="164" y="654" class="roman">Baoan</text><line x1="84" y1="752" x2="676" y2="752" stroke="#11100f" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 13"/><text id="blessingText" x="380" y="811" text-anchor="middle" class="blessing">永遠平安健康</text><line x1="84" y1="850" x2="676" y2="850" stroke="#11100f" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 13"/><g id="qrGroup" transform="translate(93 892)"></g><text x="112" y="1162" class="qr-caption">掃碼製作你的島嶼車票</text><text x="510" y="1120" class="price">NT$15</text><text x="510" y="1180" class="valid">限當日有效</text><text x="508" y="1260" class="note">紀念票・非乘車憑證</text></g>
         </svg>
       </div>
@@ -47,24 +46,12 @@
       <h1>這班車，要帶你去哪裡？</h1>
       <p class="intro">選好出發與抵達，就準備發車咯。</p>
       <section class="style-picker"><h2>票面風格</h2><div class="style-options" role="group" aria-label="票面風格"><button class="style-option active" type="button" data-style="one" aria-pressed="true"><span class="style-swatch doodle-swatch"></span>島嶼手繪</button><button class="style-option" type="button" data-style="two" aria-pressed="false"><span class="style-swatch fiber-swatch"></span>纖維舊紙</button></div></section>
-      <section class="editor-group">
-        <h2>出發日期</h2>
-        <div class="date-grid"><select id="year" aria-label="年份"></select><select id="month" aria-label="月份"></select><select id="day" aria-label="日期"></select></div>
-      </section>
-      <section class="editor-group">
-        <h2>起點</h2><select id="fromSelect"></select>
-        <button class="custom-toggle" id="fromToggle" type="button" aria-expanded="false" aria-controls="fromCustomWrap"><span>＋</span> 自訂起點</button>
-        <div class="custom-wrap" id="fromCustomWrap" hidden><input id="fromCustom" type="text" placeholder="例如「台北」" autocomplete="off"></div>
-      </section>
-      <section class="editor-group">
-        <h2>終點</h2><select id="toSelect"></select>
-        <button class="custom-toggle" id="toToggle" type="button" aria-expanded="false" aria-controls="toCustomWrap"><span>＋</span> 自訂終點</button>
-        <div class="custom-wrap" id="toCustomWrap" hidden><input id="toCustom" type="text" placeholder="例如「台北」" autocomplete="off"></div>
-      </section>
+      <section class="editor-group"><h2>出發日期</h2><div class="date-grid"><select id="year" aria-label="年份"></select><select id="month" aria-label="月份"></select><select id="day" aria-label="日期"></select></div></section>
+      <section class="editor-group"><h2>起點</h2><select id="fromSelect"></select><button class="custom-toggle" id="fromToggle" type="button" aria-expanded="false" aria-controls="fromCustomWrap"><span>＋</span> 自訂起點</button><div class="custom-wrap" id="fromCustomWrap" hidden><input id="fromCustom" type="text" placeholder="例如「台北」" autocomplete="off"></div></section>
+      <section class="editor-group"><h2>終點</h2><select id="toSelect"></select><button class="custom-toggle" id="toToggle" type="button" aria-expanded="false" aria-controls="toCustomWrap"><span>＋</span> 自訂終點</button><div class="custom-wrap" id="toCustomWrap" hidden><input id="toCustom" type="text" placeholder="例如「台北」" autocomplete="off"></div></section>
       <section class="blessing-editor"><h2>祝福語</h2><input id="blessing" type="text" placeholder="依然勇敢，常保平安" maxlength="12"><p>最多填寫 12 個字；留白時系統會自動配對。</p></section>
       <input id="fromRoman" type="hidden"><input id="toRoman" type="hidden">
-      <button id="saveBtn" type="button">儲存我的車票 <span>↓</span></button>
-      <p class="hint">將產生高清 PNG 圖片，可儲存或分享給朋友。</p>
+      <button id="saveBtn" type="button">儲存我的車票 <span>↓</span></button><p class="hint">將產生高清 PNG 圖片，可儲存或分享給朋友。</p>
     </aside>
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
