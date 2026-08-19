@@ -13,7 +13,7 @@
 - 自動匹配站點英文名稱
 - 提供「島嶼手繪」與「纖維舊紙」票面風格
 - 即時預覽日期、站點、方向、祝福語與 QR Code
-- 將票面与所用字体一并嵌入并导出高清 PNG
+- 將票面與所用字體一併嵌入並匯出高畫質 PNG
 - 支援桌面與手機版面
 
 ## 使用方式
@@ -81,27 +81,27 @@ python -m http.server 8765
 └── README.md
 ```
 
-## 更新日志
+## 更新日誌
 
 ### 2026-08-20
 
-- 使用扩充版汇文明朝 WOFF2 字库，修复部分繁体字没有被字体覆盖的问题
-- 同步更新网页预览与 PNG 导出的字体路径
-- 字库验证包含 7,505 个映射字符
-- 重新发布至 GitHub Pages
+- 使用擴充版匯文明朝 WOFF2 字庫，修復部分繁體字未被字體覆蓋的問題
+- 同步更新網頁預覽與 PNG 匯出的字體路徑
+- 字庫驗證包含 7,505 個映射字元
+- 重新發布至 GitHub Pages
 
 ### 2026-08-19
 
-- 将三份网页字体纳入仓库，解决上线后字体与本机预览不一致的问题
-- 修复 PNG 导出时未完整嵌入票面字体的问题
-- 接入 Supabase 匿名事件统计
-- 新增车票生成与下载事件记录
-- 增加匿名统计隐私提示
-- 启用 GitHub Pages 自动部署
+- 將三份網頁字體納入倉庫，解決上線後字體與本機預覽不一致的問題
+- 修復 PNG 匯出時未完整嵌入票面字體的問題
+- 接入 Supabase 匿名事件統計
+- 新增車票生成與下載事件記錄
+- 增加匿名統計隱私提示
+- 啟用 GitHub Pages 自動部署
 
 ## 部署
 
-GitHub Pages 从 `main` 分支根目录发布。合并到 `main` 后，GitHub Pages 会自动重新构建网站。
+GitHub Pages 從 `main` 分支根目錄發布。合併到 `main` 後，GitHub Pages 會自動重新建置網站。
 
-- 仓库：<https://github.com/Helen-224/taiwan-ticket-generator>
-- 线上网站：<https://helen-224.github.io/taiwan-ticket-generator/>
+- 倉庫：<https://github.com/Helen-224/taiwan-ticket-generator>
+- 線上網站：<https://helen-224.github.io/taiwan-ticket-generator/>
