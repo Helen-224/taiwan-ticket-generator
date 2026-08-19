@@ -1,4 +1,4 @@
-@font-face{font-family:"Special Elite";src:url("./assets/fonts/SpecialElite-Regular.woff2") format("woff2");font-weight:400;font-display:swap}@font-face{font-family:"Huiwen Mingchao";src:url("./assets/fonts/HuiwenMingchao-GBK-common.woff2") format("woff2");font-weight:400;font-display:swap}@font-face{font-family:"Yomogi Handwriting";src:url("./assets/fonts/Yomogi-Regular-common.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Special Elite";src:url("./assets/fonts/SpecialElite-Regular.woff2") format("woff2");font-weight:400;font-display:swap}@font-face{font-family:"Huiwen Mingchao";src:url("./assets/fonts/HuiwenMingchao-GBK-subset.woff2") format("woff2");font-weight:400;font-display:swap}@font-face{font-family:"Yomogi Handwriting";src:url("./assets/fonts/Yomogi-Regular-common.woff2") format("woff2");font-weight:400;font-display:swap}
 :root{--ink:#201e19;--muted:#8d887d;--paper:#f8f4e9;--paper-deep:#eee7d8;--line:rgba(32,30,25,.68)}
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;color:var(--ink);background:#e9e3d7;font-family:"Courier New","PMingLiU","MingLiU",serif}
